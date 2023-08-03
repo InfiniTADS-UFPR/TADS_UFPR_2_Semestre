@@ -7,7 +7,7 @@ Atividades e trabalhos realizados para o segundo semestre do curso de graduaçã
         <td>Estudo de uma linguagem de programação estruturada. Introdução a Linguagem C</td>
     </tr>
     <tr>
-        <td><a href="#">Ver pasta</a></td>
+        <td><a href="https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/linguagem%20programacao">Ver pasta</a></td>
     </tr>
     <tr>
         <td rowspan="2"><b>Desenvolvimento Web I</b></td>
