@@ -13,3 +13,17 @@ Projetar e desenvolver aplicações reais em ambiente Web, compreender o modelo 
 - Jquery
 - Framworks front-end (Bootstrap, materialize, W3.CSS)
 - Desenvolvimento back-end com PHP
+
+**Atividades**
+
+- [x] Exercício de preparação
+- [x] Exercício de requisições HTTP
+- [x] Listas e tabelas
+- [ ] "Loja" virtual
+- [x] CSS
+- [ ] Posicionamento
+- [ ] Exercícios de programação
+- [ ] Manipulação de HTML com DOM
+- [ ] TODO List com Jquery
+- [ ] PHP - HTML Dinâmico
+- [ ] PHP - Formulários
