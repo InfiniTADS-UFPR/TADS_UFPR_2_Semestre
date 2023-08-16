@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+//E1_07) Faça um programa que leia três números e os apresente em ordem crescente.
+
 int main() {
     int numeros[3];
     int aux, key, tot=3;
