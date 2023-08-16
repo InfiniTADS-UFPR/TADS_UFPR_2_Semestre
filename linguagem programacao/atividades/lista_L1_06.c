@@ -9,10 +9,10 @@ int main(void){
             break;
         }
         else if( num%2 == 0){
-            printf("par");
+            printf("%d par", num);
         }
         else{
-            printf("impar");
+            printf("%d impar", num);
         }
         printf("\n");
     }
