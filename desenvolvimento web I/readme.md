@@ -19,7 +19,7 @@ Projetar e desenvolver aplicações reais em ambiente Web, compreender o modelo 
 - [x] Exercício de preparação
 - [x] Exercício de requisições HTTP
 - [x] Listas e tabelas
-- [ ] "Loja" virtual
+- [x] "Loja" virtual
 - [x] CSS
 - [ ] Posicionamento
 - [ ] Exercícios de programação
