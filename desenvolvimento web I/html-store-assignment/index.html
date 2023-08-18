@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mia Lojinha</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <header>
+    <h1>Mia Lojinha</h1>
+    <hr>
+  </header> 
+  <main>
+    <h2>Produtos: </h2>
+    <table>
+      <tr>
+        <td>Ficha técnica</td>
+        <th>Smartphone Nokia NK108</th>
+        <th>Smartphone Xiami Redmi 12c</th>
+        <th>Apple iPhone 14</th>
+      </tr>
+      <tr>
+        <th bgcolor="#A6A6A6">Imagem do produto</th>
+        <td align="center">
+          <img src="./images/nokia.jpg" alt="smartphone Nokia" width="50%" height="auto">
+        </td>
+        <td align="center">
+          <img src="./images/xiaomi.jpg" alt="smartphone Xiaomi" width="30%" height="auto">
+        </td>
+        <td align="center">
+          <img src="./images/iphone.jpg" alt="iphone 14" width="40%" height="auto">
+        </td>
+      </tr>
+      <tr>
+        <th bgcolor="#D2D2D2">Capacidade de armazenamento</th>
+        <td>128 GB</td>
+        <td>128 GB</td>
+        <td>128 GB</td>
+      </tr>
+      <tr>
+        <th bgcolor="#A6A6A6">Memória RAM</th>
+        <td>6GB RAM</td>
+        <td>4GB RAM</td>
+        <td>6GB RAM</td>
+      </tr>
+      <tr>
+        <th bgcolor="#D2D2D2">Dimensões da tela</th>
+        <td>Tela 6,6"</td>
+        <td>Tela 6,7"</td>
+        <td>Tela 6,1"</td>
+      </tr>
+      <tr>
+        <th bgcolor="#A6A6A6">Sistema operacional</th>
+        <td>Android 12</td>
+        <td>Android</td>
+        <td>IOS</td>
+      </tr>
+      <tr>
+        <th bgcolor="#D2D2D2">Valor</th>
+        <td>R$1399,00</td>
+        <td>R$725,00</td>
+        <td>R$5335,00</td>
+      </tr>
+    </table>
+    <hr>
+    <h2>Compre o seu agora:</h2>
+    <form>
+      <fieldset style="border-radius: 15px;">
+        <legend>Informações pessoais:</legend>
+        <label for="nome_completo">Nome completo:</label>
+        <input type="text" name="nome_completo"><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email"><br>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf"><br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone"><br>
+      </fieldset><br>
+      <fieldset style="border-radius: 15px;">
+        <legend>Método de pagamento:</legend>
+        <label for="credit">Crédito</label>
+        <input type="radio" name="payment" value="credit" checked><br>
+        <label for="debit">Débito</label>
+        <input type="radio" name="payment" value="debit"><br>
+        <label for="cash">Dinheiro</label>
+        <input type="radio" name="payment" value="cash"><br>
+      </fieldset><br>
+      <fieldset style="border-radius: 15px;">
+        <legend>Selecione o produto:</legend>
+        <select name="cars">
+          <option value="nokia">Smartphone Nokia NK108</option>
+          <option value="redmi">Smartphone Xiaomi Redmi 12c </option>
+          <option value="iphone">Apple Iphone 14</option>
+        </select><br>
+      </fieldset><br>
+      
+
+      <button type="submit" style="cursor: pointer;">Comprar agora</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Leonardo Salgado</p>
+  </footer>
+</body>
+</html>
