@@ -16,4 +16,11 @@ Atividades e trabalhos realizados para o segundo semestre do curso de graduaçã
     <tr>
         <td><a href="https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I">Ver pasta</a></td>
     </tr> 
+    <tr>
+        <td rowspan="2"><b>Redes de computadores</b></td>
+        <td>Estudo de redes de comunicação de dados, modelos, protocolos e tecnologias</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/redes%20de%20computadores">Ver pasta</a></td>
+    </tr>
 </table>
