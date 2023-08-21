@@ -25,3 +25,29 @@ int length(char *string){
     return i;
 }
 
+char *toLower(char *string){
+    char c;
+    int len = length(string);
+
+    for(int i = 0; i < len; i++){
+        c = string[i];
+        if(c >= 'A' && c <= 'Z'){
+            string[i] = c + 32;
+        }
+    }
+    return string;
+}
+
+char *toUpper(char *string){
+    char c;
+    int len = length(string);
+
+    for(int i = 0; i < len; i++){
+        c = string[i];
+        if(c >= 'a' && c <= 'z'){
+            string[i] = c - 32;
+        }
+    }
+    return string;
+}
+
