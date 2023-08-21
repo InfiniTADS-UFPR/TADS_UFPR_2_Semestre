@@ -15,3 +15,13 @@ char *input(char *str, char *string){
     return string;
 }
 
+int length(char *string){
+    int i = 0;
+
+    while(string[i] != '\0'){
+        i++;
+    }
+
+    return i;
+}
+

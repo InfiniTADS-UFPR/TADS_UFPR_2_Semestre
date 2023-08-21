@@ -6,5 +6,6 @@ int main(void){
 
     input("Digite uma string:\n", string);
     printf("String digitada: %s\n", string);
+    printf("Tamanho da string: %d\n", length(string));
     scanf("%*c");
 }
