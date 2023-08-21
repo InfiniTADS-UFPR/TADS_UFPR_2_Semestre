@@ -1,17 +1,5 @@
 #include <stdio.h>
-
-char *my_gets(char *string){
-    int i = 0;
-    char c;
-
-    while((c = getchar()) != '\n'){
-        string[i] = c;
-        i++;
-    }
-    string[i] = '\0';
-
-    return string;
-}
+#include "my_string.h"
 
 int main(void){
     char string[100];
