@@ -4,8 +4,7 @@
 int main(void){
     char string[100];
 
-    printf("Digite uma string:\n");
-    my_gets(string);
+    input("Digite uma string:\n", string);
     printf("String digitada: %s\n", string);
     scanf("%*c");
 }
