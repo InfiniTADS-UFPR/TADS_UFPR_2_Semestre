@@ -51,3 +51,15 @@ char *toUpper(char *string){
     return string;
 }
 
+char *concat(char *string, char *string2){
+    int len = length(string);
+    int len2 = length(string2);
+
+    for(int i = 0; i < len2; i++){
+        string[len + i] = string2[i];
+    }
+    string[len + len2] = '\0';
+
+    return string;
+}
+
