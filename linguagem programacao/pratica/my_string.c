@@ -63,3 +63,15 @@ char *concat(char *string, char *string2){
     return string;
 }
 
+char *reverse(char *string){
+    int len = length(string);
+    char aux;
+
+    for(int i = 0; i < len/2; i++){
+        aux = string[i];
+        string[i] = string[len - i - 1];
+        string[len - i - 1] = aux;
+    }
+    return string;
+}
+
