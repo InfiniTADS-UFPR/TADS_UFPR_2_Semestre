@@ -63,6 +63,17 @@ char *concat(char *string, char *string2){
     return string;
 }
 
+char *copy(char *string, char *string2){
+    int len = length(string2);
+
+    for(int i = 0; i < len; i++){
+        string[i] = string2[i];
+    }
+    string[len] = '\0';
+
+    return string;
+}
+
 char *reverse(char *string){
     int len = length(string);
     char aux;
