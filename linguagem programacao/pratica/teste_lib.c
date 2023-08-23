@@ -21,6 +21,6 @@ int main(void){
     printf("String invertida: %s\n", reverse(string3));
     printf("String 1 == String 2: %d\n", compare(string, string2));
     printf("String 1 inclui String 2: %d\n", include(string, string2));
-    printf("String 1 contem String 2 na posição: %d\n", find(string, string2));
+    printf("String 1 contem String 2 a partir da casa: %d\n", find(string, string2));
     scanf("%*c");
 }
