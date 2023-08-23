@@ -86,5 +86,56 @@ char *reverse(char *string){
     return string;
 }
 
+int compare(char *string, char *string2){
+    int len = length(string);
+    int len2 = length(string2);
+
+    if(len != len2){
+        return 0;
+    }
+    for(int i = 0; i < len; i++){
+        if(string[i] != string2[i]){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int include(char *string, char *string2){
+    int len = length(string);
+    int len2 = length(string2);
+    int j = 0;
+
+    for(int i = 0; i < len; i++){
+        if(string[i] == string2[j]){
+            j++;
+        }else{
+            j = 0;
+        }
+        if(j == len2){
+            return 1;
+        }
+    }
+    return 0;
+}
+
+int find(char *string, char *string2){
+    int len = length(string);
+    int len2 = length(string2);
+    int j = 0;
+
+    for(int i = 0; i < len; i++){
+        if(string[i] == string2[j]){
+            j++;
+        }else{
+            j = 0;
+        }
+        if(j == len2){
+            return i - len2 + 1;
+        }
+    }
+    return -1;
+}
+
 
 
