@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,200;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(to right,#000034 25%, transparent 100%), url('../images/universo.jpeg');
+    box-shadow: 0px 3px 5px #000;
+}
+
+header a{
+    font-weight: bold;
+    margin: 0 2vw;
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out 0.8s;
+}
+
+header a:hover{
+    color: #79F2F2;
+    filter: drop-shadow(0px 0px 5px #fff);
+}
+
+.logo img{
+    width: 15vw;
+    height: auto;
+    margin: 0 2vw;
+}
+
+main{
+    position: relative;
+    top: 15vh;
+    width: 100%;
+}
+
+.left{
+    float: left;
+    width: 60%;
+    padding: 1vw;
+    margin: 4vh 1vw;
+    border: 1px solid black;
+}
+
+.right{
+    float: right;
+    width: 30%;
+    padding: 1vw;
+    margin: 4vh 1vw;
+    border: 1px solid black;
+}
+
+.left h2, .right h2{
+    color: #969696;
+    margin-bottom: 1vw;
+}
+
+.left p, .right p{
+    text-align: justify;
+    text-indent: 2vw;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 3vh 0;
+    background-color: #252525;
+}
+
+footer p{
+    color: #fff;
+    font-weight: bold;
+    margin: 0 2vw;
+}
