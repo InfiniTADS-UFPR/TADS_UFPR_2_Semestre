@@ -7,7 +7,7 @@ $ ifconfig eth0 192.168.100.1
 
 ```
 
-**Configurar Switch(só funcionar para Switches específicos)**
+**Configurar Switch(só funcionar para Switches gerenciáveis)**
 ```
 # Mostrar configuração atual
 $ ovs-vsctl show
