@@ -8,12 +8,12 @@ int main(void){
     char string2[50];
     char string3[50];
 
-    input("Digite uma string:\n", string);
+    input("Digite uma string:\n", string, 5);
     printf("String digitada: %s\n", string);
     printf("Tamanho da string: %d\n", length(string));
     printf("String em maiusculas: %s\n", toUpper(string));
     printf("String em minusculas: %s\n", toLower(string));
-    input("Digite outra string:\n", string2);
+    input("Digite outra string:\n", string2, 5);
     printf("String 1: %s |\tString 2: %s\n", string, string2);
     copy(string3, string);
     printf("String concatenada: %s\n", concat(string3, string2));

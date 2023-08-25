@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "my_string.h"
 
-char *input(char *str, char *string){
+char *input(char *str, char *string, int size){
     int i = 0;
     char c;
 
     printf("%s", str);
-    while((c = getchar()) != '\n'){
+    while((c = getchar()) != '\n' && i < size - 1){
         string[i] = c;
         i++;
     }
