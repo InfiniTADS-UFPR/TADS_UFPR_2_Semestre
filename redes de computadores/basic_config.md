@@ -58,3 +58,30 @@ $ ifconfig eth0.100 192.168.100.1
 $ ip link delete eth0.100
 ```
 ---
+
+### Sobre Spanning Trees
+```
+# Habilitar Spanning-Tree:
+$ ovs-vsctl set bridge br0 stp_enable=true
+
+# Obter status da Bridge:
+$ ovs-vsctl get bridge br0 status
+
+# Obter status da Porta:
+$ ovs-vsctl get port eth0 status
+
+# Obter endereço MAC da Bridge:
+$ ovs-vsctl get interface br0 mac_in_use
+
+# Obter endereço MAC da Porta:
+$ ovs-vsctl get interface eth0 mac_in_use
+
+# Habilitar Rapid Spanning-Tree:
+$ ovs-vsctl set bridge br0 rstp_enable=true
+
+# Obter status da Bridge (Rapid Spanning-Tree):
+$ ovs-vsctl get bridge br0 rstp_status
+
+# Obter status da Porta (Rapid Spanning-Tree):
+$ ovs-vsctl get port eth0 rstp_status
+```
