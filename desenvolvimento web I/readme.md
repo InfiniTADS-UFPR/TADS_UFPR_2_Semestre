@@ -22,7 +22,8 @@ Projetar e desenvolver aplicações reais em ambiente Web, compreender o modelo 
 - [x] "Loja" virtual
 - [x] CSS
 - [x] Posicionamento
-- [ ] Exercícios de programação
+- [ ] Clone YouTube
+- [x] Exercícios de programação
 - [ ] Manipulação de HTML com DOM
 - [ ] TODO List com Jquery
 - [ ] PHP - HTML Dinâmico
