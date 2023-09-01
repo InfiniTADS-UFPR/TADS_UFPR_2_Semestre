@@ -50,3 +50,37 @@ $ sudo apt install gns3-server gns3-gui
 Com o GNS3 funcionando, podemos fazer as seguintes configurações:
 
 **Utilizando a interface**
+
+Ao executar o GNS3 pela primeira vez, digitando `gns3` no terminal, ele irá abrir um _setup wizard_.
+
+Selecione as seguintes opções:
+
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/800d3925-a2b8-4f36-b54a-bc79907dd4b6)
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/073396e0-8a95-4ee2-bee4-01053ad4c201)
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/3bce02e1-0c39-4caf-a4bb-79b9bbf52117)
+
+Finalmente, antes de começar a trabalhar com o GNS3, abra as Preferências no menu Editar
+
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/9a7d858f-0769-4933-bfaa-cb9b780d56c3)
+
+Vá na última opção chamada **Docker containers** e selecione `new`
+
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/1204871f-7085-42f5-baa0-51c195dcf9a9)
+
+Selecione as duas imagens carregadas anteriormente
+
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/060dbaa0-071a-4e1d-8f83-d7659ed4b25b)
+
+Configure o nome e a quantidade de adaptadores para as duas imagens, as demais configurações pode deixar o padrão
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/f34f03b9-e690-4e24-9157-87386df76df0)
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/f2b898a1-2b95-44c5-9b7c-76f4f0231f76)
+
+Por fim, clique em `ok` para salvar as configurações
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/9093ffac-20f3-4319-8884-00213b7a8cd4)
+
+Agora é só criar um novo projeto e testar
+![image](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/assets/53799801/b984a3ef-07ac-4063-a5f4-e13ca8ccf006)
+
+
+
+
