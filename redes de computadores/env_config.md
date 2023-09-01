@@ -9,10 +9,21 @@ $ wget http://200.17.200.33/docker-gns3.tar
 
 ```
 
-Depois, é necessário instalar o docker. __*Lembre-se*__ que para instalar é necessário a permissão do `sudo`. Utilize o seguinte comando:
+Depois, é necessário instalar o docker. __*Lembre-se*__ que para instalar é necessário a permissão do `sudo`. Utilize os seguintes comandos:
 ```
-$ sudo apt install docker.ce
+$ sudo apt install apt-transport-https curl gnupg-agent ca-certificates software-properties-common -y
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+$ sudo apt install docker-ce docker-ce-cli containerd.io -y
+```
 
+Para verificar se a instalação foi bem sucedida, execute:
+```
+$ sudo docker run hello-world
+
+// A mensagem recebida deve ser
+// Hello from Docker!
+// This message shows that your installation appears to be working correctly.
 ```
 
 Com o docker instalado, podemos importar as imagens baixadas:
