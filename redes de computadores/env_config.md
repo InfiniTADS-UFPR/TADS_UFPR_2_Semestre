@@ -42,8 +42,9 @@ $ sudo docker images
 ```
 Por fim, para executar o GNS3 precisamos instalar mais dois pacotes:
 ```
+$ sudo add-apt-repository ppa:gns3/ppa
+$ sudo apt update
 $ sudo apt install gns3-server gns3-gui
-
 ```
 
 Com o GNS3 funcionando, podemos fazer as seguintes configurações:
