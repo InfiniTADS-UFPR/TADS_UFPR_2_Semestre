@@ -36,6 +36,9 @@ Para verificar se as imagens foram importadas corretamente, utilize o comando:
 ```
 $ sudo docker images
 
+// As duas imagens que devem aparecer são:
+// gns3/ubds020       xenial    c66194e62fae   2 years ago    222MB
+// gns3/openvswitch   latest    b012d20d6ff6   2 years ago    15.2MB
 ```
 Por fim, para executar o GNS3 precisamos instalar mais dois pacotes:
 ```
