@@ -1,12 +1,16 @@
 ## Configuração básica
 
-**Configurar ip do computador (Linux)**
+**Configurar computador (Linux)**
 ```
+# Configurar ip
 # ifconfig [interface] [ip] [máscara]
 $ ifconfig eth0 192.168.100.1
+
+# Capturar tráfego
+$ tcpdump -i [interface] -n
 ```
 
-**Configurar Switch (só funciona para Switches gerenciáveis)**
+**Configurar Switch (só funciona para Switches gerenciáveis openvswitch)**
 ```
 # Mostrar configuração atual
 $ ovs-vsctl show
@@ -84,4 +88,29 @@ $ ovs-vsctl get bridge br0 rstp_status
 
 # Obter status da Porta (Rapid Spanning-Tree):
 $ ovs-vsctl get port eth0 rstp_status
+```
+---
+
+### Sobre Link-Aggregation (802.3ad)
+```
+# Criar LAG: 
+$ ovs-vsctl add-bond br0 bond0 eth0 eth1 
+
+# Criar o LAG com LACP ativado, modo de balanceamento TCP e rapida convergência: 
+$ ovs-vsctl add-bond br0 bond0 eth0 eth1 bond_mode=balance-tcp lacp=active other_config:lacp-time=fast
+
+# Só habilitar balanceamento TCP: 
+$ ovs-vsctl set port bond0 bond_mode=balance-tcp
+
+# Só habilitar LACP: 
+$ ovs-vsctl set port bond0 lacp=active
+
+# Só aumentar tempo de convergencia: 
+$ ovs-vsctl set port bond0 other_config:lacp-time=fast
+
+# Verificar status do LAG: 
+$ ovs-appctl bond/show bond0
+
+# Verificar status do LACP: 
+$ ovs-appctl lacp/show bond0
 ```
