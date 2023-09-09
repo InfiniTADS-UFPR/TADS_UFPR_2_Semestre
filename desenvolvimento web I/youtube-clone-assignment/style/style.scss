@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300&display=swap');
+
+$dark1: #0f0f0f;
+$dark2: #121212;
+$mediumDark1: #262626;
+$mediumDark2: #ffffff38;
+$mediumDark3: #000000cc;
+$light1: #f1f1f1;
+$gray: #aaaaaa;
+$gray2: #515561;
+$blue1: #3ea6ff;
+$blue2: #263850;
+$blue3: #65b8ff;
+
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $dark1;
+}
+
+header{
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+
+    .menu{
+        @include flex(center, center, row);
+        height: 40px;
+        margin: 8px;
+
+        span{
+            @include flex(center, center, row);
+            background-color: transparent;
+            height: 40px;
+            width: 40px;
+            color: $light1;
+            border-radius: 50%;
+            margin-left: 16px;
+
+            &:hover{
+                background-color: $mediumDark1;
+                cursor: pointer;
+            }
+        }
+
+        img{
+            margin-left: 16px;
+        }
+    }
+
+    .search_bar{
+        @include flex(center, center, row);
+        height: 40px;
+        margin: 8px;
+
+        input{
+            background-color: $dark2;
+            border-radius: 40px 0px 0px 40px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            padding: 8px;
+            width: 515px;
+            z-index: 1;
+            border: solid 1px $dark1;
+            color: $light1;
+            outline: none;
+        }
+
+        button{
+            background-color: $mediumDark1;
+            height: 40px;
+            width: 65px;
+            border: solid 1px $dark1;
+            outline: none;
+            color: $light1;
+            cursor: pointer;
+            border-radius: 0px 40px 40px 0px;
+        }
+
+        #audio{
+            @include flex(center, center, row);
+            background-color: $mediumDark1;
+            height: 40px;
+            width: 40px;
+            color: $light1;
+            border-radius: 50%;
+            margin: 0 8px;
+            font-variation-settings: 'FILL' 1;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $mediumDark2;
+            }
+        }
+    }
+
+    .user{
+        @include flex(space-around, center, row);
+
+        span{
+            @include flex(center, center, row);
+            background-color: transparent;
+            height: 40px;
+            width: 40px;
+            color: $light1;
+            border-radius: 50%;
+            margin: 4px;
+            font-variation-settings: 'wgth' 300;
+
+            &:hover{
+                background-color: $mediumDark1;
+                cursor: pointer;
+            }
+        }
+
+        img{
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            margin: 0 24px;
+        }
+    }
+}
+
+main{
+    @include flex(space-between, flex-start, row);
+
+    .main_content{
+        font-family: 'Roboto', sans-serif; 
+        width: 716px;
+        margin-top: 24px;
+        margin-left: 103px;
+
+        video{
+            width: 100%;
+            box-shadow: 0 0 100px #acacac;
+        }
+
+        h1{
+            margin-top: 14px;
+            font-size: 20px;
+            color: $light1;
+        }
+
+        .info{
+            @include flex(space-between, center, row);
+            margin-top: 14px;
+
+            .channel{
+                @include flex(space-between, center, row);
+
+                .logo img{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    margin-right: 12px;
+                }
+    
+                .name{
+                    @include flex(space-evenly, flex-start, column);
+                    height: 45px;
+                    margin-right: 28px;
+    
+                    h2{
+                        font-size: 14px;
+                        color: $light1;
+                    }
+    
+                    span{
+                        font-size: 12px;
+                        color: #aaaaaa;
+                    }
+                }
+    
+                button{
+                    @include flex(space-around, center, row);
+                    height: 36px;
+                    width: 127px;
+                    font-size: 14px;
+                    background-color: $mediumDark1;
+                    color: $light1;
+                    border: none;
+                    outline: none;
+                    border-radius: 18px;
+                }
+            }
+
+            .about{
+                display: flex;
+                justify-content: space-between;
+                margin-left: 12px;
+                width: 352px;
+
+                .likes{
+                    display: flex;
+                    align-items: center;
+                
+                    button{
+                        font-size: 14px;
+                        color: $light1;
+                        background-color: $mediumDark1;
+                        border: none;
+                        outline: none;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $mediumDark2;
+                        }
+                    }
+
+                    .like{
+                        @include flex(space-around, center, row);
+                        width: 100px;
+                        height: 36px;
+                        border-right: 1px solid #aaaaaa;
+                        border-radius: 18px 0px 0px 18px;
+                    }
+
+                    .dislike{
+                        @include flex(space-around, center, row);
+                        width: 52px;
+                        height: 36px;
+                        border-right: 1px solid #aaaaaa;
+                        border-radius: 0px 18px 18px 0px;
+                    }
+                }
+
+                .share{
+                    @include flex(space-around, center, row);
+                    font-size: 14px;
+                    color: $light1;
+                    background-color: $mediumDark1;
+                    border: none;
+                    outline: none;
+                    width: 138px;
+                    height: 36px;
+                    border-radius: 18px;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $mediumDark2;
+                    }
+                }
+
+                .more{
+                    @include flex(center, center, row);
+                    color: $light1;
+                    background-color: $mediumDark1;
+                    border: none;
+                    outline: none;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .descricao{
+            margin-top: 12px;
+            font-size: 14px;
+            padding-top: 12px;
+            color: $light1;
+            width: 716px;
+            background-color: $mediumDark1;
+            border-radius: 12px;
+
+            h2{
+                font-size: 14px;
+                margin-left: 12px;
+
+            }
+            
+            span{
+                color: #aaaaaa;
+            }
+
+            p{
+                margin-top: 12px;
+                margin-left: 12px;
+                margin-bottom: 20px;
+            }
+
+            a{
+                color: $blue1;
+            }
+            details{
+                position: relative;
+                bottom: 15px;
+                
+                summary{
+                    list-style: none;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 0px;
+                    cursor: pointer;
+                }
+
+                &[open]{
+                    top: 5px;
+                    width: 716px;
+                    height: 450px;
+                    background-color: $mediumDark1;
+                    border-radius: 0 0 12px 12px;
+                    summary{
+                        left: 10px;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .comments{
+            margin-top: 12px;
+
+            .heading{
+                @include flex(flex-start, center, row);
+                margin-bottom: 12px;
+
+                h1{
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-right: 32px;
+                    margin-top: 3px;
+                    color: $light1;
+                }
+
+                h2{
+                    font-size: 14px;
+                    margin-left: 8px;
+                    color: $light1;
+                }
+
+                span{
+                    color: $light1;
+                    cursor: default;
+                }
+            }
+
+            .add_comment{
+                @include flex(space-between, flex-start, row);
+                margin-bottom: 32px;
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                }
+
+                input{
+                    width: 644px;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    padding: 3px;
+                    font-size: 14px;
+                    color: $light1;
+                    border-bottom: 1px solid $gray2;
+                
+                    &::placeholder{
+                        color: $gray;
+                    }
+                }
+            }
+
+            .comment{
+                @include flex(space-between, flex-start, row);
+                margin-bottom: 16px;
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                }
+
+                .content{
+                    width: 620px;
+
+                    h3{
+                        font-size: 13px;
+                        font-weight: 600;
+
+                        a{
+                            text-decoration: none;
+                            color: $light1;
+                            cursor: pointer;
+                        }
+
+                        span{
+                            color: $gray;
+                            font-weight: 300;
+                        }
+                    }
+
+                    p{
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $light1;
+                        margin-top: 7px;
+
+                        a{
+                            color: $blue1;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .actions{
+                        @include flex(space-between, center, row);
+                        margin-top: 5px;
+                        width: 30%;
+
+                        span{
+                            color: $light1;
+                            cursor: pointer;
+                            font-variation-settings: 'wght' 100;
+                        }
+
+                        p{
+                            color: $gray;
+                            font-size: 12px;
+                        }
+
+                        button{
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: $light1;
+                            background-color: transparent;
+                            border: none;
+                            outline: none;
+                            border-radius: 16px;
+                            padding:  6px 12px;
+
+                            &:hover{
+                                cursor: pointer;
+                                background-color: $mediumDark1;
+                            }
+                        }
+                    }
+
+                    button{
+                        @include flex(space-around, center, row);
+                        color: $blue1;
+                        font-weight: 600;
+                        margin-top: 4px;
+                        padding: 5px 12px;
+                        border-radius: 18px;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $blue2;
+                        }
+                    }
+                }
+
+                .more{
+                    font-size: 20px;
+                    color: $light1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .side_content{
+        width: 402px;
+        margin-top: 24px;
+        margin-right: 103px;
+
+        .anuncio{
+            position: relative;
+            border-radius: 12px;
+            height: 146px;
+            background-color: $mediumDark1;
+
+            .banner{
+                border-radius: 12px 12px 0 0;
+                height: 66px;
+                width: 100%;
+            }
+
+            .info{
+                @include flex(space-around, center, row);
+
+                img{
+                    margin: 16px;
+                    margin-right: 0px;
+                    height: 48px;
+                    width: 48px;
+                    border-radius: 50%;
+                }
+
+                .content{
+                    width: 194px;
+
+                    h1{
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: 'Roboto', sans-serif;
+                        color: $light1;
+                        margin-bottom: 4px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        font-family: 'Roboto', sans-serif;
+                        color: $light1;
+
+                        span{
+                            font-weight: 300;
+                            color: $gray;
+                        }
+                    }
+                }
+
+                button{
+                    color: $dark1;
+                    background-color: $blue1;
+                    font-size: 14px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    padding: 8px 14px;
+                    border: none;
+                    outline: none;
+                    border-radius: 18px;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $blue3;
+                    }
+                }
+            }
+
+            .adds_central{
+                position: absolute;
+                top: 12px;
+                right: 7px;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: #ffffff;
+                font-variation-settings: 'wght' 300;
+                cursor: pointer;
+            }
+        }
+
+        .categorias{
+            @include flex(flex-start, center, row);
+            margin-top: 11px;
+            margin-bottom: 11px;
+
+            p{
+                display: block;
+                font-size: 14px;
+                padding: 6px 12px;
+                border-radius: 8px;
+                font-family: 'ROBOTO', sans-serif;
+                margin-right: 8px;
+                background-color: $mediumDark1;
+                color: $light1;
+                cursor: pointer;
+
+                &.selected{
+                    background-color: $light1;
+                    color: $dark1;
+                }
+            }
+
+            span{
+                font-size: 12px;
+                color: $light1;
+            }
+        }
+
+        .add{
+            @include flex(space-between, flex-start, row);
+
+            .image{
+                img{
+                    height: 168px;
+                    width: auto;
+                    border-radius: 10px;
+                }
+                
+            }
+
+            .content{
+                width: 202px;
+                margin-left: 8px;
+                margin-right: 24px;
+
+                h1{
+                    font-size: 14px;
+                    font-family: 'Roboto', sans-serif;
+                    color: $light1;
+                    margin-bottom: 4px;
+                }
+                p{
+                    font-size: 12px;
+                    font-family: 'Roboto', sans-serif;
+                    color: $gray;
+                    margin-bottom: 4px;
+                }
+                h2{
+                    font-size: 12px;
+                    font-family: 'Roboto', sans-serif;
+                    color: $light1;
+                    margin-bottom: 16px;
+
+                    span{
+                        font-weight: 300;
+                        color: $gray;
+                    }
+                }
+                a{
+                    @include flex(center, center, row);
+                    width: 144px;
+                    height: 36px;
+                    color: $blue1;
+                    background-color: $blue2;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border-radius: 18px;
+
+                    &:hover{
+                        background-color: $gray2;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .more{
+                color: $light1;
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+
+        .other_video{
+            @include flex(space-between, flex-start, row);
+            width: 402px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-bottom: 8px;
+
+            .thumbnail{
+                position: relative;
+                width: 168px;
+                height: 94px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: contain;
+                }
+
+                p{
+                    position: absolute;
+                    bottom: 7px;
+                    right: 8px;
+                    display: block;
+                    padding: 3px 4px;
+                    border-radius: 4px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-family: 'Roboto', sans-serif;
+                    background-color: $mediumDark3;
+                    color: $light1;
+                }
+            }
+
+            .video_info{
+                width: 202px;
+                margin-left: 8px;
+                margin-right: 24px;
+
+                h1{
+                    font-size: 14px;
+                    font-family: 'Roboto', sans-serif;
+                    color: $light1;
+                    margin-bottom: 4px;
+                }
+                p{
+                    font-size: 12px;
+                    font-family: 'Roboto', sans-serif;
+                    color: $gray;
+                    margin-bottom: 4px;
+                }
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            .more{
+                color: $light1;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
