@@ -18,12 +18,12 @@ Projetar e desenvolver aplicações reais em ambiente Web, compreender o modelo 
 
 - [x] Exercício de preparação
 - [x] Exercício de requisições HTTP
-- [x] [Listas e tabelas](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I/html-tables-assignment)
-- [x] ["Loja" virtual](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I/html-store-assignment)
-- [x] [CSS](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I/css-assignment)
-- [x] [Posicionamento](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I/css-position-assignment)
-- [x] [Clone YouTube](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I/youtube-clone-assignment)
-- [x] [Exercícios de programação](https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I/js-assignment)
+- [x] [Listas e tabelas](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/html-tables-assignment)
+- [x] ["Loja" virtual](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/html-store-assignment)
+- [x] [CSS](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/css-assignment)
+- [x] [Posicionamento](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/css-position-assignment)
+- [x] [Clone YouTube](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/youtube-clone-assignment)
+- [x] [Exercícios de programação](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/js-assignment)
 - [ ] Manipulação de HTML com DOM
 - [ ] TODO List com Jquery
 - [ ] PHP - HTML Dinâmico
