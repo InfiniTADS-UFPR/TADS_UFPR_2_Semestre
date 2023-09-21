@@ -26,6 +26,6 @@ Projetar e desenvolver aplicações reais em ambiente Web, compreender o modelo 
 - [x] [Exercícios de programação](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/js-assignment)
 - [x] [Exercícios de javascript pt2](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/js-assignment-2)
 - [x] [Manipulação de HTML com DOM](https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I/dom-assignment)
-- [ ] TODO List com Jquery
+- [x] TODO List com Jquery
 - [ ] PHP - HTML Dinâmico
 - [ ] PHP - Formulários
