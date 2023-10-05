@@ -1,4 +1,4 @@
-## Configuração básica
+## Comandos básicos
 
 **Configurar computador (Linux)**
 ```
@@ -113,4 +113,25 @@ $ ovs-appctl bond/show bond0
 
 # Verificar status do LACP: 
 $ ovs-appctl lacp/show bond0
+```
+
+### Sobre ARP
+```
+# Listar tabela de endereçamento ARP
+$ arp -an
+
+# Deletar endereço da tabela ARP
+$ arp -d mac
+```
+
+### Tabela de roteamento
+```
+# Listar tabela de roteamento
+$ route -n
+
+# Adicionar rota estática
+$ route add -net 172.16.0.0 netmask 255.255.0.0 gw 192.168.0.0.2
+
+# Adicionar default gateway
+$ route add default gw 10.0.0.2
 ```
