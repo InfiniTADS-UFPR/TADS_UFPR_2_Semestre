@@ -14,8 +14,7 @@ Atividades e trabalhos realizados para o segundo semestre do curso de graduaçã
         <td colspan="2">Desenvolvimento de aplicações para o ambiente Web e estudo das principais tecnologias desta área</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I">Ver pasta</a></td>
-        <td><a href="https://salgado2004.github.io/TADS_UFPR_2_Semestre/desenvolvimento%20web%20I">Ver online</a></td>
+        <td colspan="2"><a href="https://github.com/Salgado2004/TADS_UFPR_2_Semestre/tree/main/desenvolvimento%20web%20I">Ver pasta</a></td>
     </tr> 
     <tr>
         <td rowspan="2"><b>Redes de computadores</b></td>
